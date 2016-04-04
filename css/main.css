@@ -10,7 +10,7 @@ html {
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
   box-sizing: border-box;
-  font-family: "Ubuntu", sans-serif;
+  font: normal 100%/1.3 Ubuntu, sans-serif;
 }
 
 *, *::before, *::after {
@@ -18,41 +18,113 @@ html {
 }
 
 body {
-
+  font-size: 100%;
+  margin: 0;
 }
 
 header {
-
+  background-color: #18294f;
+  padding: 1em 0;
+  color: #fff;
 }
 
 header h1 {
   text-align: center;
+  color: #fff;
+  margin: 0;
+  font-size: 2rem;
 }
 
 nav ul {
-  text-decoration: none;
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+  font-size: 1.125rem;
 }
 
 nav a {
-
+  text-decoration: none;
+  color: #6c8fe0;
+  display: block;
+  padding: .75em;
+  white-space: nowrap;
 }
 
 nav a:hover {
-
+  background-color: #6c8fe0;
+  color: #fff;
 }
 
 @media only screen and (min-width: 25em) {
+
+  html {
+    font-size: 100%;
+  }
+
+  nav ul {
+    list-style-type: none;
+    padding-left: 0;
+    overflow: hidden;
+  }
+
+  nav a {
+    padding: .5em;
+  }
+
+  nav ul li {
+    float: left;
+    width: 50%;
+    margin-top: 0.75em;
+  }
+
+  nav a:hover {
+    background-color: #6c8fe0;
+    color: #fff;
+  }
 
 }
 
 @media only screen and (min-width: 38em) {
 
+  html {
+    font-size: 110%;
+    line-height: 1.4;
+  }
+
+  nav ul li {
+    width: 25%;
+    text-align: center;
+  }
+
 }
 
 @media only screen and (min-width: 60em) {
 
+  html {
+    font-size: 120%;
+    line-height: 1.5;
+  }
+
+  header h1 {
+    display: inline-block;
+  }
+
+  nav {
+    display: inline-block;
+    float: right;
+  }
+
+  nav ul li {
+    width: auto;
+  }
+
 }
 
 @media only screen and (min-width: 90em) {
+
+  html {
+    font-size: 130%;
+    line-height: 1.5;
+  }
 
 }
